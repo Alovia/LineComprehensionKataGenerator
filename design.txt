@@ -1,0 +1,127 @@
+lck -- a list comprehension kata generator
+
+Index:
+
+Abstract
+How LCK looks
+The anatomy of a list comprehension kata
+Python PEPs pertaining to list comprehension
+
+Abstract:
+=========
+
+The List comprehension kata generator is a command line utility that
+provides randomly generated list comprehension puzzles.
+
+List comprehensions are a quick and convenient way of efficiently
+writing loops in python.
+
+They can look daunting at first and can be complex to read, but with
+enough repeated practice, they will eventually be second nature,
+saving the programmer a lot of time in writing and reading
+comprehension.
+
+The solutions to the list comprehension puzzles can be conveniently
+entered at the command list, no editor is needed and the user can
+answer the questions without extra effort, in quick succession.  Tests
+are generated and run at the same time to ensure the entered solution
+is correct.
+
+This approach achieves maximum exposure for minimum amount of work for
+the puzzlers and helps them immerse into the thoughts needed to solve,
+instead of wasting time with too much editing.
+
+
+The LCK interpreter
+===================
+
+This is a limited capability python interpreter.  It allows files to
+be read in and single and multiline interactive input.
+
+At the prompt:
+
+----------------------------------------------------------------------
+% lck
+
+Welcome of to the list comprehension kata generator for Python.
+
+Select your options:
+
+1 -- saved settings --- continue where you stopped the last time
+...
+(there is more but we are just showing the main option for now)
+...
+LCK> 1
+You are on List Comprehension Kata Nr. 241.  You current score is:
+attempts: 588, instant solve 78, 2: 239 3:400 4:23 5:29
+
+Current Kata:
+
+Write a O(n^2) generator that zips list A and list B into a dictionary
+structure that looks like:
+
+{ 1: 'a', 2: 'b', 3: 'c', 4 : 'd', 5: 'e'}
+
+A = [1,2,3,4,5]
+B = ['a','b','c','d','e']
+
+LCK> Solution = [(A,B) for x in range(0,len(A))]
+
+
+
+----------------------------------------------------------------------
+
+Other commands:
+
+help
+
+
+
+The anatomy of a list comprehension kata
+========================================
+
+List or generator?
+------------------
+
+O(n) Dimensions
+---------------
+
+Iterator types
+--------------
+
+Helper Variables
+----------------
+
+Question statement
+------------------
+
+Tests
+-----
+
+Time comparisons
+----------------
+
+Scoring
+-------
+
+Level of difficulty
+-------------------
+
+
+Python PEPs pertaining to list comprehension
+============================================
+
+PEP 289 -- Generator Expressions
+https://www.python.org/dev/peps/pep-0289/
+
+Generator Expressions vs. List Comprehension
+https://stackoverflow.com/questions/47789/generator-expressions-vs-list-comprehension?rq=1
+
+PEP 274 -- Dict Comprehensions
+http://legacy.python.org/dev/peps/pep-0274/
+
+PEP 202 -- List Comprehensions
+https://www.python.org/dev/peps/pep-0202/
+
+6.2.4. Displays for lists, sets and dictionaries
+https://docs.python.org/3/reference/expressions.html#displays-for-lists-sets-and-dictionaries
